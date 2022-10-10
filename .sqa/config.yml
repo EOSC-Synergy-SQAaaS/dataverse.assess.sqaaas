@@ -1,0 +1,82 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.4
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/IQSS/dataverse:
+      branch: develop
+      repo: http://github.com/IQSS/dataverse
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/IQSS/dataverse git:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-charcoal-dunker.sh
+        container: qc.acc_blurry-indigo-hamster
+  QC.Doc:
+    repos:
+      github.com/IQSS/dataverse find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-sepia-spoonbill.sh
+        container: qc.doc_snippy-smalt-chicken
+      github.com/IQSS/dataverse git:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-zucchini-indri.sh
+        container: qc.doc_scummy-grey-turtle
+      github.com/IQSS/dataverse markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-viridian-chimpanzee.sh
+        container: qc.doc_jumpy-apricot-grasshopper
+      github.com/IQSS/dataverse restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-cornflower-centipede.sh
+        container: qc.doc_bumpy-chartreuse-squirrel
+  QC.Lic:
+    repos:
+      github.com/IQSS/dataverse licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-peach-opossum.sh
+        container: qc.lic_sleazy-rose-donkey
+  QC.Sec:
+    repos:
+      github.com/IQSS/dataverse bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-heliotrope-ostrich.sh
+        container: qc.sec_frumpy-magnolia-angora
+  QC.Sty:
+    repos:
+      github.com/IQSS/dataverse checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-myrtle-caterpillar.sh
+        container: qc.sty_seedy-white-ant
+      github.com/IQSS/dataverse flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-rust-woodpecker.sh
+        container: qc.sty_queasy-chartreuse-boar
+      github.com/IQSS/dataverse hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-sepia-badger.sh
+        container: qc.sty_gimpy-cerise-dingo
+      github.com/IQSS/dataverse jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.bluesy-magenta-ladybird.sh
+        container: qc.sty_scummy-charcoal-markhor
+      github.com/IQSS/dataverse rubocop:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaggy-tan-kakapo.sh
+        container: qc.sty_woolly-magnolia-wolverine
+      github.com/IQSS/dataverse stylelint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-bronze-falcon.sh
+        container: qc.sty_flabby-rose-boar
+  QC.Ver:
+    repos:
+      github.com/IQSS/dataverse get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sickly-xanthic-salamander.sh
+        container: qc.ver_scummy-coral-giraffe
+timeout: 1800
