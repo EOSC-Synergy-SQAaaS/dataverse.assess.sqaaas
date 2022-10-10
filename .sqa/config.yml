@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/IQSS/dataverse git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-indigo-woodlouse.sh
-        container: qc.acc_snippy-russet-frog
+        - /usr/bin/env sh .sqa/script.wimpy-orchid-gopher.sh
+        container: qc.acc_silly-ivory-hedgehog
   QC.Doc:
     repos:
       github.com/IQSS/dataverse find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-ecru-shark.sh
-        container: qc.doc_geeky-heliotrope-lemur
+        - /usr/bin/env sh .sqa/script.gamy-orange-dachshund.sh
+        container: qc.doc_wimpy-smalt-chimpanzee
       github.com/IQSS/dataverse git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-ecru-opossum.sh
-        container: qc.doc_skinny-chestnut-impala
+        - /usr/bin/env sh .sqa/script.scummy-turquoise-capybara.sh
+        container: qc.doc_crabby-viridian-hare
       github.com/IQSS/dataverse markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-scarlet-wallaby.sh
-        container: qc.doc_hazy-chestnut-penguin
+        - /usr/bin/env sh .sqa/script.messy-platinum-discus.sh
+        container: qc.doc_pokey-periwinkle-dugong
       github.com/IQSS/dataverse restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-aqua-baboon.sh
-        container: qc.doc_lousy-lime-weasel
+        - /usr/bin/env sh .sqa/script.messy-tangerine-swan.sh
+        container: qc.doc_wheezy-champagne-dolphin
   QC.Lic:
     repos:
       github.com/IQSS/dataverse licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-rose-tortoise.sh
-        container: qc.lic_sleazy-champagne-gecko
+        - /usr/bin/env sh .sqa/script.gimpy-black-millipede.sh
+        container: qc.lic_messy-pumpkin-dingo
   QC.Sec:
     repos:
       github.com/IQSS/dataverse bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-tan-angelfish.sh
-        container: qc.sec_slaphappy-ivory-sponge
+        - /usr/bin/env sh .sqa/script.gummy-green-numbat.sh
+        container: qc.sec_hilly-peach-frog
   QC.Sty:
     repos:
       github.com/IQSS/dataverse checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-seashell-husky.sh
-        container: qc.sty_flabby-teal-dormouse
+        - /usr/bin/env sh .sqa/script.cloudy-brown-grouse.sh
+        container: qc.sty_ugly-lilac-tapir
       github.com/IQSS/dataverse flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-corn-tarsier.sh
-        container: qc.sty_hazy-violet-dogfish
+        - /usr/bin/env sh .sqa/script.skimpy-razzmatazz-burmese.sh
+        container: qc.sty_zippy-lemon-swan
       github.com/IQSS/dataverse hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-copper-hare.sh
-        container: qc.sty_gimpy-pear-hare
+        - /usr/bin/env sh .sqa/script.bumpy-firebrick-dachsbracke.sh
+        container: qc.sty_cheeky-crimson-monster
       github.com/IQSS/dataverse jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-tomato-monkey.sh
-        container: qc.sty_leaky-cream-crane
+        - /usr/bin/env sh .sqa/script.fuzzy-magnolia-lion.sh
+        container: qc.sty_hilly-cornflower-oyster
       github.com/IQSS/dataverse rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-sangria-wolfhound.sh
-        container: qc.sty_bluesy-chocolate-sheep
+        - /usr/bin/env sh .sqa/script.pokey-blue-rattlesnake.sh
+        container: qc.sty_gimpy-brown-uakari
       github.com/IQSS/dataverse stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-orchid-boar.sh
-        container: qc.sty_homely-saffron-mist
+        - /usr/bin/env sh .sqa/script.blurry-seashell-fish.sh
+        container: qc.sty_snazzy-carmine-urchin
   QC.Ver:
     repos:
       github.com/IQSS/dataverse get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-xanthic-ferret.sh
-        container: qc.ver_muzzy-brown-chimpanzee
+        - /usr/bin/env sh .sqa/script.stinky-azure-horse.sh
+        container: qc.ver_clammy-persimmon-frigatebird
 timeout: 1800
