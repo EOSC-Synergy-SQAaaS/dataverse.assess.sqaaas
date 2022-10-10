@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/IQSS/dataverse git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-charcoal-dunker.sh
-        container: qc.acc_blurry-indigo-hamster
+        - /usr/bin/env sh .sqa/script.gummy-indigo-woodlouse.sh
+        container: qc.acc_snippy-russet-frog
   QC.Doc:
     repos:
       github.com/IQSS/dataverse find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-sepia-spoonbill.sh
-        container: qc.doc_snippy-smalt-chicken
+        - /usr/bin/env sh .sqa/script.trippy-ecru-shark.sh
+        container: qc.doc_geeky-heliotrope-lemur
       github.com/IQSS/dataverse git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-zucchini-indri.sh
-        container: qc.doc_scummy-grey-turtle
+        - /usr/bin/env sh .sqa/script.crappy-ecru-opossum.sh
+        container: qc.doc_skinny-chestnut-impala
       github.com/IQSS/dataverse markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-viridian-chimpanzee.sh
-        container: qc.doc_jumpy-apricot-grasshopper
+        - /usr/bin/env sh .sqa/script.snippy-scarlet-wallaby.sh
+        container: qc.doc_hazy-chestnut-penguin
       github.com/IQSS/dataverse restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-cornflower-centipede.sh
-        container: qc.doc_bumpy-chartreuse-squirrel
+        - /usr/bin/env sh .sqa/script.fuzzy-aqua-baboon.sh
+        container: qc.doc_lousy-lime-weasel
   QC.Lic:
     repos:
       github.com/IQSS/dataverse licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-peach-opossum.sh
-        container: qc.lic_sleazy-rose-donkey
+        - /usr/bin/env sh .sqa/script.chummy-rose-tortoise.sh
+        container: qc.lic_sleazy-champagne-gecko
   QC.Sec:
     repos:
       github.com/IQSS/dataverse bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-heliotrope-ostrich.sh
-        container: qc.sec_frumpy-magnolia-angora
+        - /usr/bin/env sh .sqa/script.ugly-tan-angelfish.sh
+        container: qc.sec_slaphappy-ivory-sponge
   QC.Sty:
     repos:
       github.com/IQSS/dataverse checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-myrtle-caterpillar.sh
-        container: qc.sty_seedy-white-ant
+        - /usr/bin/env sh .sqa/script.muzzy-seashell-husky.sh
+        container: qc.sty_flabby-teal-dormouse
       github.com/IQSS/dataverse flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-rust-woodpecker.sh
-        container: qc.sty_queasy-chartreuse-boar
+        - /usr/bin/env sh .sqa/script.stinky-corn-tarsier.sh
+        container: qc.sty_hazy-violet-dogfish
       github.com/IQSS/dataverse hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-sepia-badger.sh
-        container: qc.sty_gimpy-cerise-dingo
+        - /usr/bin/env sh .sqa/script.clammy-copper-hare.sh
+        container: qc.sty_gimpy-pear-hare
       github.com/IQSS/dataverse jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-magenta-ladybird.sh
-        container: qc.sty_scummy-charcoal-markhor
+        - /usr/bin/env sh .sqa/script.squeaky-tomato-monkey.sh
+        container: qc.sty_leaky-cream-crane
       github.com/IQSS/dataverse rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-tan-kakapo.sh
-        container: qc.sty_woolly-magnolia-wolverine
+        - /usr/bin/env sh .sqa/script.hilly-sangria-wolfhound.sh
+        container: qc.sty_bluesy-chocolate-sheep
       github.com/IQSS/dataverse stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-bronze-falcon.sh
-        container: qc.sty_flabby-rose-boar
+        - /usr/bin/env sh .sqa/script.boozy-orchid-boar.sh
+        container: qc.sty_homely-saffron-mist
   QC.Ver:
     repos:
       github.com/IQSS/dataverse get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-xanthic-salamander.sh
-        container: qc.ver_scummy-coral-giraffe
+        - /usr/bin/env sh .sqa/script.scaly-xanthic-ferret.sh
+        container: qc.ver_muzzy-brown-chimpanzee
 timeout: 1800
